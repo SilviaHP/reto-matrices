@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "api-go"
+		},
+		{
+			"path": "api-node"
+		},
+		{
+			"path": "front-end"
+		}
+	],
+	"settings": {}
+}

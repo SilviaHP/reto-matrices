@@ -1,0 +1,6 @@
+# Variables de entorno locales
+.env
+
+# OS
+.DS_Store
+Thumbs.db

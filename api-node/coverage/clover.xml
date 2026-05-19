@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1779216401073" clover="3.2.0">
+  <project timestamp="1779216401073" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7" elements="37" coveredelements="37" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
+    <file name="matrixStats.js" path="C:\Silvia\reto-matrices\api-node\src\services\matrixStats.js">
+      <metrics statements="18" coveredstatements="18" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7"/>
+      <line num="7" count="27" type="stmt"/>
+      <line num="18" count="17" type="stmt"/>
+      <line num="19" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="16" type="stmt"/>
+      <line num="22" count="16" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="15" type="stmt"/>
+      <line num="26" count="15" type="stmt"/>
+      <line num="27" count="23" type="stmt"/>
+      <line num="28" count="46" type="cond" truecount="4" falsecount="0"/>
+      <line num="29" count="7" type="stmt"/>
+      <line num="34" count="8" type="stmt"/>
+      <line num="50" count="6" type="stmt"/>
+      <line num="52" count="48" type="stmt"/>
+      <line num="55" count="48" type="cond" truecount="2" falsecount="0"/>
+      <line num="56" count="48" type="cond" truecount="2" falsecount="0"/>
+      <line num="57" count="6" type="stmt"/>
+      <line num="59" count="6" type="stmt"/>
+      <line num="71" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

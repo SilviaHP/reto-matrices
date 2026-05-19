@@ -1,0 +1,13 @@
+# compiled output
+/dist
+/node_modules
+
+# Test http manual
+test.http
+
+# IDE - VSCode
+.vscode/*
+
+# Logs
+logs
+*.log

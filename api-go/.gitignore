@@ -1,0 +1,9 @@
+# Binario compilado
+main
+main.exe
+
+# Variables de entorno locales
+.env
+
+# Test http manual
+test.http

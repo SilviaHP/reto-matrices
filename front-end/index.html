@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto técnico matrices</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <header class="panel__header">
+        <h1>Reto técnico matrices</h1>
+        <p>Ingresa una matriz válida para calcular su factorización QR desde la API Go.</p>
+      </header>
+
+      <form id="matrixForm" novalidate>
+        <div class="form-grid">
+          <label class="field">
+            <span>Filas</span>
+            <input id="rowsInput" type="number" min="1" step="1" value="3" required>
+          </label>
+
+          <label class="field">
+            <span>Columnas</span>
+            <input id="colsInput" type="number" min="1" step="1" value="3" required>
+          </label>
+
+          <div class="actions actions--generate">
+            <button id="generateBtn" type="button" class="btn btn--secondary">
+              Generar matriz
+            </button>
+          </div>
+        </div>
+
+        <section class="matrix-section">
+          <h2>Matriz de entrada</h2>
+          <p class="hint">Regla: filas deben ser mayores o iguales que columnas.</p>
+          <div id="matrixGrid" class="matrix-grid" aria-live="polite"></div>
+        </section>
+
+        <div class="actions">
+          <button id="submitBtn" type="submit" class="btn btn--primary">
+            Calcular QR
+          </button>
+        </div>
+
+        <p id="errorBox" class="feedback feedback--error" role="alert" hidden></p>
+        <p id="successBox" class="feedback feedback--success" hidden></p>
+      </form>
+    </section>
+
+    <section class="panel panel--results">
+      <h2>Resultado</h2>
+      <div id="resultEmpty" class="result-placeholder">
+        Aún no hay resultado. Completa la matriz y presiona <strong>Calcular QR</strong>.
+      </div>
+      <div id="resultContent" hidden>
+        <div class="result-card">
+          <h3>Matriz Q</h3>
+          <div id="qContainer"></div>
+        </div>
+        <div class="result-card">
+          <h3>Matriz R</h3>
+          <div id="rContainer"></div>
+        </div>
+        <div class="result-card">
+          <h3>Estadísticas</h3>
+          <pre id="statsContainer" class="code-block"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
